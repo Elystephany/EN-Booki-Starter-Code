@@ -14,7 +14,7 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #ffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,6 +120,7 @@ body {
 
 footer{
     background-color: #F2F2F2	;
+    margin: 30px;
 
 }
 .footer-container{
@@ -142,11 +143,161 @@ header ul{
         list-style: none;
         display: flex;
         gap: 20px;
+     
     
 }
 .logo-container{
     display: flex;
     justify-content: space-between;
+   
 
 }
+.main-logo{
+    padding: 25px;
+    padding-left: 0px;
+    width: 65px;
+    height: 20px;
+}
 
+header li a:hover, li a :focus, .active {
+    color: #0065FC;
+    border-top: 3px solid blue;
+    padding-top: 20px;
+
+}
+ .search-icon{
+    background-color: #D9D9D9;
+    border-radius: 8px 0px 0px 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 28px;
+    border-right: 0px;
+
+    
+}
+.search-button{
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0px 8px 8px 0px;
+    height: 30px;
+    width: 70px;
+    border: 0px;
+    font-weight: bold;
+}
+::placeholder{
+    font-weight: bold;
+    color: black;
+}
+    .pin-icon{
+        width: 13px;
+        height: 12px;
+    }
+input{
+    height: 30px;
+    border-color: #D9D9D9;
+    border-right: none;
+   
+}
+.search-form{
+    display: flex;
+}
+.filters-container{
+    display:flex;
+    gap: 20px;
+    font-weight: bold;
+    margin: 30px;
+  }
+
+  button{
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid #D9D9D9 ;
+  }
+  button:hover{
+    background-color: #DEEBFF;
+  }
+
+  /*
+  .btn-budget{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 30px;
+    background-color: white;
+    border-color: #D9D9D9;
+    width: 120px;
+  }
+  .btn-family{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 180px;
+    background-color: white;
+    border-color: #D9D9D9;
+  }
+  .btn-romantic{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 140px;
+    background-color: white;
+    border-color: #D9D9D9;
+}
+
+.btn-romantic:hover{
+    background-color: #DEEBFF;
+}
+.btn-pinks{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 30px;
+    width: 150px;
+    background-color: white;
+    border-color: #D9D9D9;
+
+}
+*/
+.available-places{
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid;
+    border-color: #D9D9D9;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+
+}
+.places-to-stay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+  

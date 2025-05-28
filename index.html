@@ -18,7 +18,7 @@
 <body>
     <header>
             <div class="logo-container">
-                    <img src="images/logo/Booki.png" alt="logo">
+                    <img src="images/logo/Booki.png" alt="logo" class="main-logo">
                     <ul>
                         <li>
                             <a href="#">Accommodation</a>
@@ -28,11 +28,28 @@
                         </li>
                     </ul>
             </div>
+            <h1> Find a place to stay for your dream vacation</h1>
+            <p> In the heart of the city or surrounded by nature</p>
+            <form role="search" aria-label="Site search" class="search-form">
+                <span class="search-icon"> <img src="images/pin.svg" alt="" class="pin-icon"> </span>
+                <input type="search" id="site-search" name="q" placeholder="Marseille, France" required aria-label="Search through site content" />
+                <button class="search-button" type="submit">Search</button>
+              </form>
+
+    <div id="filters-page" class="filters-container">
+    <p> Filters</p>
+    <button class="btn-budget"  onclick="filterSelection('Budget')"> <span class="budget-icon"> <img src="images/cash.svg" alt=""> </span>Budget</button>
+    <button class="btn-family" onclick="filterSelection('Family-Friendly')"> <span class="family-icon"> <img src="images/family.svg" alt=""> </span> Family-Friendly</button>
+    <button class="btn-romantic" onclick="filterSelection('Romantic')"> <span class="romantic-icon"> <img src="images/romantic.svg" alt=""> </span>Romantic</button>
+    <button class="btn-pinks" onclick="filterSelection('Our Top Pinks')"><span class="fire-icon"> <img src="images/fire.svg" alt=""> </span> Our Top Pinks</button>
+    </div>
+    <div id="places" class="available-places">
+        <p class="places-to-stay"> <span class="icon-container"> <img src="images/exclamation.svg" alt="" class="icon-exclamation"></span>  There are over 500 available places to stay in this city</p>
+    </div>
         </header>
         <main>
-            <div class="accommodation-and-popular">
+<div class="accommodation-and-popular">
                 <section class="accommodation">
-
                 </section>
                 <section class="popular">
                     <div class="popular-title">
