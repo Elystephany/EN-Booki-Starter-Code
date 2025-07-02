@@ -71,6 +71,45 @@ body {
 .accommodation {
     width: 65%;
 }
+.section-title{
+    margin-bottom: 30px;
+}
+.accommodation-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+}
+.accommodation-card .card{
+    display: grid;
+    width: 320px;
+    height: 190px;
+    border-radius: 20px;
+    padding-bottom: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.accommodation-card img{
+    width: 320px;
+    height:150px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: 5px;
+
+}
+.accommodation-card .card-title{
+    margin-top: 10px;
+    margin-bottom: 4px;
+
+}
+.accommodation-card .card-subtitle{
+    margin: 0;
+}
+.accommodation-card .card-rating{
+    margin-top: 5px;    
+}
+.more-title{
+    margin: 0px;
+}
 
 /****** Popular ***********/
 .popular {
@@ -86,6 +125,7 @@ body {
 .popular-cards .card {
     display: flex;
     margin-top: 33px;
+
 }
 
 .popular-cards img {
@@ -116,6 +156,64 @@ body {
 .popular-cards .card-rating {
     margin-bottom: 5px;
 }
+/****** Things to Do Marseille ***********/
+
+.card-activites-to-Do{
+    width: 97%;
+    
+}
+
+
+.M-tittle{
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.card-activites-to-Do{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 10px;
+   justify-content: center;
+   
+    
+   
+}
+
+.card-activities{
+    display: grid;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-left: 30px;
+
+   
+  
+       
+}
+
+
+.activites-img img{
+  
+   border-top-left-radius: 20px;
+   border-top-right-radius: 20px;
+   width: 430px;
+   
+
+
+}
+
+.card-activites-to-Do h3 {
+    margin-left: 20px;
+
+}
+
+
+
+
+
+
 /****** footer ***********/
 
 footer{
@@ -299,5 +397,32 @@ input{
     justify-content: center;
     gap: 10px;
 
+}  
+
+
+@media (width < 220px) {
+    .logo-container {
+              grid-template-columns: 1fr;
+              gap: 20px;
+    }
+    .btn-budget{
+        grid-template-columns: 1fr;
+        width: 220px; 
+        max-width: 100vw;
+        box-sizing: border-box;
+        margin: 0 auto
+
+    }
+
+    .accommodation-card{
+        grid-template-columns: 1fr;
+        width: 220px; 
+        max-width: 100vw;
+        box-sizing: border-box;
+        margin: 0 auto
+
+
+    }
 }
+
   
