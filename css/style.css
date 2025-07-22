@@ -174,34 +174,24 @@ body {
 .card-activites-to-Do{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-   gap: 10px;
-   justify-content: center;
-   
-    
-   
+    gap: 30px;
+
 }
 
 .card-activities{
-    display: grid;
+   
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
-    margin-left: 30px;
-
-   
-  
-       
-}
+    
+   }
 
 
 .activites-img img{
-  
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-   width: 430px;
-   
 
-
+  max-width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .card-activites-to-Do h3 {
@@ -244,6 +234,9 @@ header ul{
      
     
 }
+
+
+/****** Header Logo ***********/
 .logo-container{
     display: flex;
     justify-content: space-between;
@@ -261,6 +254,7 @@ header li a:hover, li a :focus, .active {
     color: #0065FC;
     border-top: 3px solid blue;
     padding-top: 20px;
+    display: grid;
 
 }
  .search-icon{
@@ -284,6 +278,30 @@ header li a:hover, li a :focus, .active {
     border: 0px;
     font-weight: bold;
 }
+
+.search-text{
+
+
+}
+
+.fa-magnifying-glass{
+
+    color: #ffff;
+    display: none;
+
+
+}
+
+@media (   max-width: 767px) {
+    .search-text{
+        display: none;
+    }
+
+    .fa-magnifying-glass{
+        display: block;
+    }
+
+}
 ::placeholder{
     font-weight: bold;
     color: black;
@@ -303,6 +321,7 @@ input{
 }
 .filters-container{
     display:flex;
+    flex-wrap: wrap;
     gap: 20px;
     font-weight: bold;
     margin: 30px;
@@ -324,57 +343,7 @@ input{
     background-color: #DEEBFF;
   }
 
-  /*
-  .btn-budget{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 30px;
-    background-color: white;
-    border-color: #D9D9D9;
-    width: 120px;
-  }
-  .btn-family{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 30px;
-    width: 180px;
-    background-color: white;
-    border-color: #D9D9D9;
-  }
-  .btn-romantic{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 30px;
-    width: 140px;
-    background-color: white;
-    border-color: #D9D9D9;
-}
-
-.btn-romantic:hover{
-    background-color: #DEEBFF;
-}
-.btn-pinks{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    border-radius: 30px;
-    width: 150px;
-    background-color: white;
-    border-color: #D9D9D9;
-
-}
-*/
+ 
 .available-places{
     display: flex;
     justify-content: space-between;
@@ -400,29 +369,192 @@ input{
 }  
 
 
-@media (width < 220px) {
-    .logo-container {
-              grid-template-columns: 1fr;
-              gap: 20px;
+/****** Responsive to mobile ***********/
+
+
+@media (   max-width: 767px) {
+    
+    .logo-container  {
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 50px;
+      
+        }
+    
+        
+          
+    
+
+header  li a {
+    flex-direction: column;
+  
+   
+   
+  
+}
+        
+
+        header li a:hover, li a :focus, .active {
+            border-bottom: 3px solid blue;
+            padding-bottom: 20px;
+            border-top: none;
+     
+ 
+            
+           
+           }
+        
+    .main-logo {
+        flex-direction: column;
+        width: 100px;
+        height: auto;
+       justify-items: center;
+       padding-left:  170px;
+       
+  
     }
-    .btn-budget{
-        grid-template-columns: 1fr;
-        width: 220px; 
-        max-width: 100vw;
-        box-sizing: border-box;
-        margin: 0 auto
+     
+    .filters-container{
+        justify-content: space-between;
 
     }
+
+    .filters-container button {
+        flex: 0 0 48% ;
+        box-sizing: border-box;
+        height: 60px;
+    
+        
+     
+    }
+
+    .filters-container p{
+        width: 100%;
+    }
+      
+     
+    
+    .accommodation-and-popular{
+   flex-direction: column-reverse;
+       gap: 24px;
+    }
+    .accommodation,
+    .popular{ 
+        width: 100%;
+        padding: 16px 0;
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+   
+
+    
+    .popular-cards .card{
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: 16px;
+        width: 100%;
+        min-width: 0;
+        
+        
+    }
+    .popular-cards img {
+      width: 17%;
+      height: 120px;
+      border-radius: 20px 0px 0px 20px;
+     
+    }
+    .popular-cards .card-content{
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .popular-cards .card-rating{
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+
 
     .accommodation-card{
         grid-template-columns: 1fr;
-        width: 220px; 
-        max-width: 100vw;
-        box-sizing: border-box;
-        margin: 0 auto
-
+        width: 100%;
 
     }
-}
+    .accommodation-card .card{
+        width: 100%;
+       
+    }
+    .accommodation-card img{
+        width: 100%;
+      
+    }
+
 
   
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        
+    }
+    
+
+
+  
+    
+    .search-form {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+        gap: 0px;
+        width: auto;
+        padding-top: 30px;
+      }
+      .search-form .search-icon,
+      .search-form input[type="search"],
+      .search-form .search-button {
+        width: 100%;
+      }
+      .search-form input[type="search"] {
+        font-size: 1em;
+        padding: 12px;
+        border-radius: 8px;
+        border: 1px solid #D9D9D9;
+      }
+    header h1 p {
+        width: 100%;
+        
+    }
+
+    .card-activites-to-Do {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        padding: 0;
+      }
+      .card-activites-to-Do .activites-img img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        display: block;
+      }
+      .card-activities {
+        width: 100%;
+      }
+      .activites-img {
+        display: flex;
+        flex-direction: column;
+      }
+      .activites-img h3 {
+        margin: 8px 0 12px 16px;
+        font-size: 1.1em;
+      }
+
+  
+        
+    
+
+}
+
+
