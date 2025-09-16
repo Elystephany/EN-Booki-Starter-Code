@@ -208,7 +208,7 @@ body {
 
 footer{
     background-color: #F2F2F2	;
-    margin: 30px;
+    
 
 }
 .footer-container{
@@ -277,11 +277,6 @@ header li a:hover, li a :focus, .active {
     width: 70px;
     border: 0px;
     font-weight: bold;
-}
-
-.search-text{
-
-
 }
 
 .fa-magnifying-glass{
@@ -373,11 +368,16 @@ input{
 
 
 @media (   max-width: 767px) {
+
+   
     
     .logo-container  {
         flex-direction: column;
-        width: 100%;
-        padding: 0px 50px;
+        width: 375px;
+        height: 115px;
+       
+        
+        
       
         }
     
@@ -387,51 +387,93 @@ input{
 
 header  li a {
     flex-direction: column;
-  
+    width: 100%;
+    height: 36px;
+    gap: 15px;
+    margin-bottom: 5px;
+    
+ 
+    
+    
    
    
   
 }
+
+
         
 
-        header li a:hover, li a :focus, .active {
-            border-bottom: 3px solid blue;
-            padding-bottom: 20px;
+        header li a:hover, li a :focus .active {
+            border-bottom: 2px solid blue;
+            padding-bottom: 1px;
             border-top: none;
+            width: 187px;
+            justify-content: center;
+            
+    
+           
+          
+            
            
      
  
             
            
            }
+
+           
+
+           header h1 {
+            width: auto;
+            margin-top: 60px;
+            -webkit-background-clip: text;
+           font-size: clamp(1.37rem, 6vw, 3.5rem);
+           }
+
+           header p{
+            width: auto;
+            font-size: clamp(1rem, 5vw, 1.7rem);
+            line-height: 100%;
+           }
         
     .main-logo {
         flex-direction: column;
-        width: 100px;
-        height: auto;
-       justify-items: center;
-       padding-left:  170px;
+        width: 121.09px;
+        height: 79px;
+     justify-items: center;
+       padding-left: 170px;
+       gap: 10px;
        
   
     }
+    .filters-container p {
+        
+        width: 335px;
+        height: 15px;
+    }
      
     .filters-container{
+       
         justify-content: space-between;
+       
 
-    }
+    } 
+    
 
+    
     .filters-container button {
-        flex: 0 0 48% ;
+        flex: 10 0 45% ;
         box-sizing: border-box;
-        height: 60px;
+        height: 50px;
+       
+       
+        
     
         
      
     }
 
-    .filters-container p{
-        width: 100%;
-    }
+  
       
      
     
@@ -490,45 +532,70 @@ header  li a {
       
     }
 
+    footer{
+        width: 100%;
+        height: 461px;
+        margin-top: 30px;
+       
+      
+      
+      
+     
+    }
 
 
 
     .footer-container{
         grid-template-columns: 1fr;
-        width: 100%;
-        
-    }
+       
+    } 
   
+    
+  
+    header h1 p{
+        width: 335px;
+        height: 98px;
+        gap: 8px;
+      
+    }
     
     .search-form {
         grid-template-columns: 1fr 1fr 1fr;
         align-items: stretch;
-        width: auto;
+        width: 100%;
         padding-top: 30px;
         padding-left: 40px;
         padding-right: 20px;
+
       }
 
 
       .search-form .search-icon{
-        width: 10%;
-        height: 60px;
-        border-top-left-radius: 30%;
-        border-bottom-left-radius: 30%;
-      
+        width: 50px;
+        height: 49px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border: none;
       }
 
       .search-form input[type="search"]{
-        width: 60%;
-        height: 60px;
+        width: 335px;
+        height: 49px;
      
 
       }
 
       .search-form .search-button {
-        width: 10%;
-        height: 60px;
-        border-radius: 30%;
+        width: 49px;
+        height: 49px;
+        border-radius: 15px;
+        border: 1px;
+        padding-top: 15px;
+        padding-right: 16px;
+        padding-bottom: 15px;
+        padding-left: 16px;
+        gap: 10px;
+        margin-left: -15px;
       }
       
 
@@ -536,11 +603,13 @@ header  li a {
       .search-form input[type="search"] {
         font-size: 1em;
         padding: 12px;
-        border-radius: 8px;
         border: 1px solid #D9D9D9;
       }
     header h1 p {
+       
         width: 100%;
+      
+        
         
     }
 
@@ -553,7 +622,7 @@ header  li a {
       }
       .card-activites-to-Do .activites-img img {
         width: 100%;
-        height: 300px;
+        height: 200px;
         object-fit: cover;
         border-radius: 20px 20px 0 0;
         display: block;
@@ -564,6 +633,8 @@ header  li a {
       .activites-img {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        
       }
       .activites-img h3 {
         margin: 8px 0 12px 16px;
