@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/#accomodation -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki</title>
+    
+    
+    
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Booki_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Booki_files/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"><link rel="stylesheet" href="./Booki_files/style.css"></head>
+
+
+<body>
+    <header>
+        
+            <div class="logo-container">
+                    <img src="./Booki_files/Booki.png" alt="logo" class="main-logo">
+                    <nav>
+                    <ul>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#accomodation">Accommodation</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#things-to-do">Things to Do</a>
+                        </li>
+                    </ul>
+                    </nav>
+            </div>
+            
+            <h1> Find a place to stay for your dream vacation</h1>
+            <p> In the heart of the city or surrounded by nature</p>
+            <form role="search" aria-label="Site search" class="search-form">
+                <span class="search-icon"> <img src="./Booki_files/pin.svg" alt="" class="pin-icon"> </span>
+                <input type="search" id="site-search" name="q" placeholder="Marseille, France" required="" aria-label="Search through site content">
+                <button class="search-button" type="submit"> <span class="search-text"> Search </span> <i class="fa-solid fa-magnifying-glass"></i></button>
+
+              </form>
+
+    <div id="filters-page" class="filters-container">
+    <p> Filters</p>
+    <button class="btn-budget" onclick="filterSelection(&#39;Budget&#39;)"> <span class="budget-icon"> <img src="./Booki_files/cash.svg" alt=""> </span>Budget</button>
+    <button class="btn-family" onclick="filterSelection(&#39;Family-Friendly&#39;)"> <span class="family-icon"> <img src="./Booki_files/family.svg" alt=""> </span> Family-Friendly</button>
+    <button class="btn-romantic" onclick="filterSelection(&#39;Romantic&#39;)"> <span class="romantic-icon"> <img src="./Booki_files/romantic.svg" alt=""> </span>Romantic</button>
+    <button class="btn-pinks" onclick="filterSelection(&#39;Our Top Pinks&#39;)"><span class="fire-icon"> <img src="./Booki_files/fire.svg" alt=""> </span> Our Top Pinks</button>
+    </div>
+    <div id="places" class="available-places">
+        <p class="places-to-stay"> <span class="icon-container"> <img src="./Booki_files/exclamation.svg" alt="" class="icon-exclamation"></span>  There are over 500 available places to stay in this city</p>
+    </div>
+        </header>
+        <main>
+<div class="accommodation-and-popular">
+                <section class="accommodation">
+                <div class="accommodation-title">
+                    <h1 class="section-title">Marseille Accommodation</h1>
+                </div>
+                 <div class="accommodation-card">
+                    <article class="card">
+                        <img src="./Booki_files/fred-kleber.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">The Port Hotel</h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>52 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./Booki_files/febrian-zakaria.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">Amina's Hotel</h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>96 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./Booki_files/reisetopia.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">Seagulls Hotel</h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>76 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./Booki_files/annie-spratt.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">Hotel of the Sea </h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>46 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./Booki_files/marcus-loke.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">La Canebiere Inn</h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>25 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./Booki_files/nicate-lee.jpg" alt="Image of hotel room showing bed">
+                        <div class="card-content">
+                            <div class="card-txt">
+                                <h2 class="card-title">The Basket Inn</h2>
+                                <p class="card-subtitle"> From <span class="euro">€</span>23 per night</p>
+                            </div>
+                            <div class="card-rating">
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                <span class="sr-only">Rated 4 out of 5</span>
+                            </div>
+                        </div>
+                    </article>
+                    <h3 class="more-title"> Show more</h3>
+                 </div>   
+                </section>
+                <section class="popular">
+                    <div class="popular-title">
+                        <h2 class="section-title">Most popular</h2>
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="popular-cards">
+                        <article class="card">
+                            <img src="./Booki_files/emile-guillemot.jpg" alt="Image of hotel room showing bed">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Le soleil du matin</h3>
+                                    <p class="card-subtitle">From <span class="euro">€</span>128 per night</p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Rated 4 out of 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Booki_files/aw-creative.jpg" alt="Image of hotel room showing bed">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                    <p class="card-subtitle">From <span class="euro">€</span>71 per night</p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Rated 4 out of 5</span>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="card">
+                            <img src="./Booki_files/febrian-zakaria2.jpg" alt="Image of hotel room showing bed">
+                            <div class="card-content">
+                                <div class="card-txt">
+                                    <h3 class="card-title">Hôtel Bleu et Blanc</h3>
+                                    <p class="card-subtitle">From <span class="euro">€</span>68 per night</p>
+                                </div>
+                                <div class="card-rating">
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-regular fa-star" aria-hidden="true"></i>
+                                    <span class="sr-only">Rated 4 out of 5</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+
+               
+            
+            
+    
+                        
+            <h2 class="M-tittle"> Things to Do in Marseille</h2>
+             
+        <div class="card-activites-to-Do">
+            <article class="card-activities">
+              <div class="activites-img">
+                <img src="./Booki_files/Old-Port.svg" alt="imege showing the Old Port">
+                <h3> The Old Port</h3>
+            </div>
+            </article>
+        
+        
+    
+        
+                <article class="card-activities">
+             <div class="activites-img"> 
+            <img src="./Booki_files/Fort-of-P.svg" alt="Image showing Fort of Pomeges">
+            <h3>Fort of Pomeges</h3>
+            </div>
+                </article>
+
+
+                <article class="card-activities">
+                    <div class="activites-img">
+                     <img src="./Booki_files/National-Park.svg" alt="Image showing Calenques National Park">
+                     <h3> Calenques National Park</h3>
+                     </div>
+                         </article>
+
+
+
+                         <article class="card-activities">
+                            <div class="activites-img">
+                             <img src="./Booki_files/Notre-D.svg" alt="Notre-Dame de La Grande">
+                             <h3> Notre-Dame de La Grande</h3>
+                             </div>
+                                 </article>
+
+                
+        </div>
+
+
+
+
+
+
+
+                                            
+        </main>
+
+
+        <footer>
+            <div class="footer-container">
+                <div>
+                    <ul>
+                        <li>
+                            <strong>
+                            <a href="http://127.0.0.1:5500/#">About</a> </strong>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#">Using the Website</a>
+                        </li> 
+                        <li>
+                            <a href="http://127.0.0.1:5500/#">Terms and Conditions</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#">Data and Privacy</a>
+                        </li>
+            
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <strong> 
+                            <a href="http://127.0.0.1:5500/#">Our Accommodation</a> </strong>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#">Our Quality Promise</a>
+                        </li> <li>
+                            <a href="http://127.0.0.1:5500/#">Add Your Hotel</a>
+                        </li>
+            
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <strong>
+                            <a href="http://127.0.0.1:5500/#">Support</a> </strong>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5500/#">Help Center</a>
+                        </li> <li>
+                            <a href="http://127.0.0.1:5500/#">Contac Us</a>
+                        </li>
+            
+                    </ul>
+                </div>
+            </div>
+        </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+</body></html>
